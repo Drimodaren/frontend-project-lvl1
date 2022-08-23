@@ -5,4 +5,3 @@ export const userName = readlineSync.question(
 );
 
 console.log("Hello, " + userName + "!");
-
