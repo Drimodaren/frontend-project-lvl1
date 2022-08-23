@@ -3,3 +3,5 @@ install: #Эта команда полезна при первом клонир�
 	node bin/brain-games.js
 publish: 
 	npm publish --dry-run
+console:
+	integratedTerminal
