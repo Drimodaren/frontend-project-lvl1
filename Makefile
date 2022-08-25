@@ -5,3 +5,5 @@ publish:
 	npm publish --dry-run
 console:
 	integratedTerminal
+lint:
+	npx eslint .

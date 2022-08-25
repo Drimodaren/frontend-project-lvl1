@@ -6,4 +6,5 @@ export function sayHello() {
   );
 
   console.log(`Hello, ${userName}!`);
+  return userName;
 }
