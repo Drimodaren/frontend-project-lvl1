@@ -16,6 +16,8 @@ module.exports = {
     'comma-dangle': 'off',
     'no-console': 'off',
     'import/extensions': 'off',
-    'no-plusplus': 'off'
+    'no-plusplus': 'off',
+    'no-unused-vars': 'off',
+    'no-eval': 'off'
   },
 };
