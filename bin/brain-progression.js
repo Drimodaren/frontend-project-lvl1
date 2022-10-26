@@ -17,6 +17,7 @@ while (count !== 3) {
     console.log(
       `'${answer}' is wrong answer ;(. Correct answer was '${AP1.rightAnswer}'. Let's try again, ${userName}!`
     );
+    break;
   }
   console.log(`Congratulations, ${userName}!`);
 }
