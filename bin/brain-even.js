@@ -21,7 +21,7 @@ while (count !== 3) {
         answer === "yes" ? "no" : "yes"
       }'. Let's try again, ${userName}!`
     );
-    count = 0;
+    break;
   }
+  console.log(`Congratulations, ${userName}!`);
 }
-console.log(`Congratulations, ${userName}!`);
