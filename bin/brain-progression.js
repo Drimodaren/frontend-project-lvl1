@@ -12,7 +12,7 @@ while (count !== 3) {
   const answer = readlineSync.question('Your answer: ');
   if (AP1.rightAnswer === eval(answer)) {
     console.log('Correct!');
-    count++;
+    count += 1;
   } else if (AP1.rightAnswer !== answer) {
     console.log(
       `'${answer}' is wrong answer ;(. Correct answer was '${AP1.rightAnswer}'. Let's try again, ${userName}!`

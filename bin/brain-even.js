@@ -11,10 +11,10 @@ while (count !== 3) {
   const answer = readlineSync.question('Your answer: ');
   if (randomNum % 2 === 0 && answer === 'yes') {
     console.log('Correct!');
-    count++;
+    count += 1;
   } else if (randomNum % 2 !== 0 && answer === 'no') {
     console.log('Correct!');
-    count++;
+    count += 1;
   } else {
     console.log(
       `'${answer}' is wrong answer ;(. Correct answer was '${

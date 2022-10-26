@@ -11,7 +11,7 @@ let count = 0;
 while (count !== 3) {
   const randomNum1 = Math.floor(Math.random() * 10);
   const randomNum2 = Math.floor(Math.random() * 10);
-  for (let i = 0; i < arrUnar.length; i++) {
+  for (let i = 0; i < arrUnar.length; i += 1) {
     const item = arrUnar[Math.floor(Math.random() * 3)];
     randomItem = item;
   }
@@ -21,7 +21,7 @@ while (count !== 3) {
   const answer = readlineSync.question('Your answer: ');
   if (rightAnswer === eval(answer)) {
     console.log('Correct!');
-    count++;
+    count += 1;
   } else if (rightAnswer !== answer) {
     console.log(
       `'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'. Let's try again, ${userName}!`
