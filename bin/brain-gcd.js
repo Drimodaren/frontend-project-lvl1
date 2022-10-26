@@ -4,7 +4,7 @@ import { sayHello } from "../src/utils/sayHello.js";
 import { NOD } from "../src/utils/NOD.js";
 
 const userName = sayHello();
-console.log("What is the result of the expression?");
+console.log("Find the greatest common divisor of given numbers");
 let count = 0;
 while (count !== 3) {
   const randomNum1 = Math.floor(Math.random() * 100);
