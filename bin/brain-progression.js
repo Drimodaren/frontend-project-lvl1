@@ -4,7 +4,7 @@ import { sayHello } from "../src/utils/sayHello.js";
 import { AP } from "../src/utils/AP.js";
 
 const userName = sayHello();
-console.log("What is the result of the expression?");
+console.log("What number is missing in the progression?");
 let count = 0;
 while (count !== 3) {
   const AP1 = AP();
