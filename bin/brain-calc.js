@@ -1,12 +1,12 @@
 #!/usr/bin/env node
-import readlineSync from "readline-sync";
-import { sayHello } from "../src/utils/sayHello.js";
+import readlineSync from 'readline-sync';
+import { sayHello } from '../src/utils/sayHello.js';
 
 const userName = sayHello();
-const arrUnar = ["+", "-", "*"];
-let randomItem = "";
+const arrUnar = ['+', '-', '*'];
+let randomItem = '';
 
-console.log("What is the result of the expression?");
+console.log('What is the result of the expression?');
 let count = 0;
 while (count !== 3) {
   const randomNum1 = Math.floor(Math.random() * 10);
@@ -15,12 +15,12 @@ while (count !== 3) {
     const item = arrUnar[Math.floor(Math.random() * 3)];
     randomItem = item;
   }
-  const oper = eval("randomItem");
+  const oper = eval('randomItem');
   console.log(`Question: ${randomNum1} ${oper} ${randomNum2}`);
   const rightAnswer = eval(`${randomNum1} ${oper} ${randomNum2}`);
-  const answer = readlineSync.question("Your answer: ");
+  const answer = readlineSync.question('Your answer: ');
   if (rightAnswer === eval(answer)) {
-    console.log("Correct!");
+    console.log('Correct!');
     count++;
   } else if (rightAnswer !== answer) {
     console.log(

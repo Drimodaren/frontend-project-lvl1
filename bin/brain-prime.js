@@ -1,23 +1,23 @@
 #!/usr/bin/env node
-import readlineSync from "readline-sync";
-import { sayHello } from "../src/utils/sayHello.js";
+import readlineSync from 'readline-sync';
+import { sayHello } from '../src/utils/sayHello.js';
 
 const userName = sayHello();
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 let count = 0;
 const primeArrNum = [2, 3, 5, 7, 11];
-let rightAnswer = "";
+let rightAnswer = '';
 while (count !== 3) {
   const randomPrimeNum = Math.floor(Math.random() * 10);
   if (primeArrNum.includes(randomPrimeNum) === true) {
-    rightAnswer = "yes";
+    rightAnswer = 'yes';
   } else if (primeArrNum.includes(randomPrimeNum) === false) {
-    rightAnswer = "no";
+    rightAnswer = 'no';
   }
   console.log(`Question: ${randomPrimeNum}`);
-  const answer = readlineSync.question("Your answer: ");
+  const answer = readlineSync.question('Your answer: ');
   if (rightAnswer === answer) {
-    console.log("Correct!");
+    console.log('Correct!');
     count++;
   } else if (rightAnswer !== answer) {
     console.log(

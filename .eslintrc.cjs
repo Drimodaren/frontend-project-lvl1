@@ -12,7 +12,6 @@ module.exports = {
   },
   rules: {
     'import/prefer-default-export': 'off',
-    quotes: 'off',
     'comma-dangle': 'off',
     'no-console': 'off',
     'import/extensions': 'off',
