@@ -19,7 +19,6 @@ while (count !== 3) {
     console.log(
       `'${answer}' is wrong answer ;(. Correct answer was '${nod}'. Let's try again, ${userName}!`
     );
-    count = 0;
   }
+  console.log(`Congratulations, ${userName}!`);
 }
-console.log(`Congratulations, ${userName}!`);
