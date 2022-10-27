@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import { sayHello } from '../src/utils/sayHello.js';
+import sayHello from '../src/utils/sayHello.js';
 
 const userName = sayHello();
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');

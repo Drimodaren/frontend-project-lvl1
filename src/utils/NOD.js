@@ -1,4 +1,4 @@
-export function NOD(a, b) {
+function NOD(a, b) {
   const arr1 = [];
   const arr2 = [];
   for (let i = 0; i <= a; i += 1) {
@@ -26,3 +26,4 @@ export function NOD(a, b) {
 
   return getMaxOfArray(result2);
 }
+export default NOD;

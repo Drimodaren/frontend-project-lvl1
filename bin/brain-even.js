@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import { sayHello } from '../src/utils/sayHello.js';
+import sayHello from '../src/utils/sayHello.js';
 
 const userName = sayHello();
 console.log('Answer "yes" if the number is even, otherwise answer "no".');

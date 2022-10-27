@@ -1,4 +1,4 @@
-export const AP = () => {
+const AP = () => {
   const apArr = [];
   const randomFirstNum = Math.floor(Math.random() * 10);
   apArr.push(randomFirstNum);
@@ -16,3 +16,4 @@ export const AP = () => {
     rightAnswer,
   };
 };
+export default AP;

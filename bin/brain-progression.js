@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import { sayHello } from '../src/utils/sayHello.js';
-import { AP } from '../src/utils/AP.js';
+import sayHello from '../src/utils/sayHello.js';
+import AP from '../src/utils/AP.js';
 
 const userName = sayHello();
 console.log('What number is missing in the progression?');

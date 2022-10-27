@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import { sayHello } from '../src/utils/sayHello.js';
-import { NOD } from '../src/utils/NOD.js';
+import sayHello from '../src/utils/sayHello.js';
+import NOD from '../src/utils/NOD.js';
 
 const userName = sayHello();
 console.log('Find the greatest common divisor of given numbers');
