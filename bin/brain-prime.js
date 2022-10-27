@@ -21,7 +21,7 @@ while (count !== 3) {
     count += 1;
   } else if (rightAnswer !== answer) {
     console.log(
-      `'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'. Let's try again, ${userName}!`
+      `'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'. Let's try again, ${userName}!`,
     );
     break;
   }

@@ -19,7 +19,7 @@ while (count !== 3) {
     console.log(
       `'${answer}' is wrong answer ;(. Correct answer was '${
         answer === 'yes' ? 'no' : 'yes'
-      }'. Let's try again, ${userName}!`
+      }'. Let's try again, ${userName}!`,
     );
     break;
   }
