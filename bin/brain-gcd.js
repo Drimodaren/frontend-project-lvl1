@@ -12,7 +12,7 @@ while (count !== 3) {
   const nod = NOD(randomNum1, randomNum2);
   console.log(`Question: ${randomNum1} ${randomNum2}`);
   const answer = readlineSync.question('Your answer: ');
-  if (nod === eval(answer)) {
+  if (nod === Number(answer)) {
     console.log('Correct!');
     count += 1;
   } else if (nod !== answer) {

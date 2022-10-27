@@ -15,16 +15,23 @@ while (count !== 3) {
     const item = arrUnar[Math.floor(Math.random() * 3)];
     randomItem = item;
   }
-  const oper = eval('randomItem');
+  const oper = randomItem;
+  let rightAnswer = 0;
   console.log(`Question: ${randomNum1} ${oper} ${randomNum2}`);
-  const rightAnswer = eval(`${randomNum1} ${oper} ${randomNum2}`);
+  if (oper === '+') {
+    rightAnswer = randomNum1 + randomNum2;
+  } else if (oper === '-') {
+    rightAnswer = randomNum1 - randomNum2;
+  } else if (oper === '*') {
+    rightAnswer = randomNum1 * randomNum2;
+  }
   const answer = readlineSync.question('Your answer: ');
-  if (rightAnswer === eval(answer)) {
+  if (rightAnswer === Number(answer)) {
     console.log('Correct!');
     count += 1;
   } else if (rightAnswer !== answer) {
     console.log(
-      `'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'. Let's try again, ${userName}!`,
+      `'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'. Let's try again, ${userName}!`
     );
     break;
   }

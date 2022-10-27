@@ -10,7 +10,7 @@ while (count !== 3) {
   const AP1 = AP();
   console.log(`Question: ${AP1.lastAP}`);
   const answer = readlineSync.question('Your answer: ');
-  if (AP1.rightAnswer === eval(answer)) {
+  if (AP1.rightAnswer === Number(answer)) {
     console.log('Correct!');
     count += 1;
   } else if (AP1.rightAnswer !== answer) {
