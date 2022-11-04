@@ -6,8 +6,11 @@
 
 <a href="https://codeclimate.com/github/Drimodaren/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/e3d63753b8916cf8aaba/maintainability" /></a>
 
-Brain-Even: https://asciinema.org/a/4syMC9x3sEoaRMPBr47bgNW5A
-Brain-calc: https://asciinema.org/a/RUKrDSaeS33X9m5o2lohuCf0J
-Brain-gcd: https://asciinema.org/a/PgLMIKb6q4B06wo6MREEM6OCy
-Brain-progression: https://asciinema.org/a/zuGaG2FrEgfLGxlahGCuB3Ga1
-Brain-prime: https://asciinema.org/a/4DOBwrPQrHC6uzPntuft6xogX
+Описание проекта: Проект показывает результаты обучения по первому модулю на Hexlet.
+Минимальные требования: наличие Терминала или командной строки, установленный Node версии 13 и выше с помощью npm link установить пакет.
+
+Brain-Even: https://asciinema.org/a/YxIlLAVk4uecMNlRAlL9ibfq3
+Brain-calc: https://asciinema.org/a/AhPtnEzXWMM2aozc2uDHxOuds
+Brain-gcd: https://asciinema.org/a/IWcriE8p8fQO4nsKtwunxcppJ
+Brain-progression: https://asciinema.org/a/TDMrfUp4t2tHHaCju2HgfjGOt
+Brain-prime: https://asciinema.org/a/h2SeGRWhXwNJpH4aPpB6fk3Pa

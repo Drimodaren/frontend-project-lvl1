@@ -1,25 +1,5 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
-import sayHello from '../src/utils/sayHello.js';
-import NOD from '../src/utils/NOD.js';
+import gameCore from '../src/utils/gameCore.js';
+import gcdGame from '../src/utils/gcdGame.js';
 
-const userName = sayHello();
-console.log('Find the greatest common divisor of given numbers');
-let count = 0;
-while (count !== 3) {
-  const randomNum1 = Math.floor(Math.random() * 100);
-  const randomNum2 = Math.floor(Math.random() * 100);
-  const nod = NOD(randomNum1, randomNum2);
-  console.log(`Question: ${randomNum1} ${randomNum2}`);
-  const answer = readlineSync.question('Your answer: ');
-  if (nod === Number(answer)) {
-    console.log('Correct!');
-    count += 1;
-  } else if (nod !== answer) {
-    console.log(
-      `'${answer}' is wrong answer ;(. Correct answer was '${nod}'. Let's try again, ${userName}!`,
-    );
-    break;
-  }
-  console.log(`Congratulations, ${userName}!`);
-}
+gameCore('Find the greatest common divisor of given numbers', gcdGame);
