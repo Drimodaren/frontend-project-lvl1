@@ -9,7 +9,7 @@ const coreGame = (rule, getAnswerByStep) => {
     const answer = getAnswerByStep(userName);
     if (answer === 'Correct!') {
       console.log('Correct!');
-      count++;
+      count += 1;
     } else {
       console.log(answer);
       break;
