@@ -15,7 +15,7 @@ const coreGame = (rule, getAnswerByStep) => {
       count += 1;
     } else {
       console.log(
-        `'${answer}' is wrong answer ;(. Correct answer was '${touple[1]}'. Let's try again, ${userName}!`
+        `'${answer}' is wrong answer ;(. Correct answer was '${touple[1]}'. Let's try again, ${userName}!`,
       );
       break;
     }

@@ -1,7 +1,7 @@
 import NOD from './NOD.js';
-import { getRandomNumber } from './getRandomNum.js';
+import getRandomNumber from './getRandomNum.js';
 
-const gcdGame = (userName) => {
+const gcdGame = () => {
   const randomNum1 = getRandomNumber(100, 1);
   const randomNum2 = getRandomNumber(100, 1);
   const nod = NOD(randomNum1, randomNum2);

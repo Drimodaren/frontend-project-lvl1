@@ -1,6 +1,6 @@
-import { getRandomNumber } from './getRandomNum.js';
+import getRandomNumber from './getRandomNum.js';
 
-const primeGame = (userName) => {
+const primeGame = () => {
   const primeArrNum = [2, 3, 5, 7, 11];
   let rightAnswer = '';
   const randomPrimeNum = getRandomNumber(10);

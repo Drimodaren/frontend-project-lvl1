@@ -1,6 +1,6 @@
-import { getRandomNumber } from './getRandomNum.js';
+import getRandomNumber from './getRandomNum.js';
 
-const calcGame = (userName) => {
+const calcGame = () => {
   const arrUnar = ['+', '-', '*'];
   let randomItem = '';
 
