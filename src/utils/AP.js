@@ -1,4 +1,4 @@
-import { getRandomNumber } from './getRandomNum.js';
+import getRandomNumber from './getRandomNum.js';
 
 const AP = () => {
   const apArr = [];
