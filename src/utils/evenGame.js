@@ -1,18 +1,9 @@
-import readlineSync from 'readline-sync';
+import { getRandomNumber } from './getRandomNum.js';
 
 const evenGame = (userName) => {
-  const randomNum = Math.floor(Math.random() * 10);
-  console.log(`Question: ${randomNum}`);
-  const answer = readlineSync.question('Your answer: ');
-  if (randomNum % 2 === 0 && answer === 'yes') {
-    return 'Correct!';
-  }
-  if (randomNum % 2 !== 0 && answer === 'no') {
-    return 'Correct!';
-  }
-  return `'${answer}' is wrong answer ;(. Correct answer was '${
-    answer === 'yes' ? 'no' : 'yes'
-  }'. Let's try again, ${userName}!`;
+  const randomNum = getRandomNumber(10);
+  const rightAnswer = randomNum % 2 === 0 ? 'yes' : 'no';
+  return [`Question: ${randomNum}`, rightAnswer];
 };
 
 export default evenGame;
