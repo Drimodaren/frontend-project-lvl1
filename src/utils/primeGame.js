@@ -1,14 +1,10 @@
 import getRandomNumber from './getRandomNum.js';
+import getPrime from './getPrime.js';
 
 const primeGame = () => {
-  const primeArrNum = [2, 3, 5, 7, 11];
-  let rightAnswer = '';
-  const randomPrimeNum = getRandomNumber(10);
-  if (primeArrNum.includes(randomPrimeNum) === true) {
-    rightAnswer = 'yes';
-  } else if (primeArrNum.includes(randomPrimeNum) === false) {
-    rightAnswer = 'no';
-  }
+  const randomPrimeNum = getRandomNumber(100, 2);
+  const rightAnswer = getPrime(randomPrimeNum);
+
   return [`Question: ${randomPrimeNum}`, rightAnswer];
 };
 export default primeGame;
